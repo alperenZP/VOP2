@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.TreeMap;
+
 
 public class Robot {
     private String code;
@@ -116,7 +116,7 @@ public class Robot {
             }
         }
     }
-    
+
     public void schrapOpslagSchijf(int index){
         if (opslagSchijven.size() > 1){
             opslagSchijven.remove(index);

@@ -23,5 +23,9 @@ public class Main {
 
         robo.slaDataOp("REJR");
         System.out.println(robo.getAccuPercentage());
+        System.out.println(robo.geefHuidigeLocatie());
+        robo.setActief(false);
+        robo.loopLinks();
+        System.out.println(robo.geefHuidigeLocatie());
     }
 }
