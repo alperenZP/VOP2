@@ -116,4 +116,11 @@ public class Robot {
             }
         }
     }
+    
+    public void schrapOpslagSchijf(int index){
+        if (opslagSchijven.size() > 1){
+            opslagSchijven.remove(index);
+        }
+    }
+
 }

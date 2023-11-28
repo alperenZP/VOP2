@@ -5,7 +5,7 @@ public class Main {
         Processor processor = new Processor("Intel Blabla", 4, BigDecimal.valueOf(393.3), 300, "Intel");
         OpslagSchijf opslagSchijf = new OpslagSchijf("EE", 500, 0);
         Lichaam lichaam = new Lichaam("Ex22", Kleur.GEEL, 0, 0);
-        Robot robo = new Robot("EHRJE", "Rob", BigDecimal.valueOf(0.332), true, lichaam, opslagSchijf, processor);
+        Robot robo = new Robot("EHRJE", "Rob", BigDecimal.valueOf(1), true, lichaam, opslagSchijf, processor);
 
         System.out.println(robo.toString());
         System.out.println(robo.geefHuidigeLocatie());

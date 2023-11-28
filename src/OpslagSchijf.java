@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class OpslagSchijf {
     private String modelNaam;
@@ -49,6 +50,15 @@ public class OpslagSchijf {
         if (this.gebruikteOpslag + 1 <= maxOpslag){
             this.gebruikteOpslag = this.gebruikteOpslag + 1;
             gegevens.add(data);
+        }
+    }
+
+    public void verwijderData(String data){
+        for (int i = 0; i < gegevens.size(); i++) {
+            if (Objects.equals(gegevens.get(i), data)){
+                gegevens.remove(i);
+                break;
+            }
         }
     }
 }
