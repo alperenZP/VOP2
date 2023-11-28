@@ -4,6 +4,13 @@ public class Lichaam {
     private int positieX;
     private int positieY;
 
+    public Lichaam(String modelNaam, Kleur verfkleur, int positieX, int positieY) {
+        this.modelNaam = modelNaam;
+        this.verfkleur = verfkleur;
+        this.positieX = positieX;
+        this.positieY = positieY;
+    }
+
     public String getModelNaam() {
         return modelNaam;
     }
@@ -14,6 +21,16 @@ public class Lichaam {
 
     public void setVerfkleur(Kleur verfkleur) {
         this.verfkleur = verfkleur;
+    }
+
+    @Override
+    public String toString() {
+        return "Lichaam{" +
+                "modelNaam='" + modelNaam + '\'' +
+                ", verfkleur=" + verfkleur +
+                ", positieX=" + positieX +
+                ", positieY=" + positieY +
+                '}';
     }
 
     public int getPositieX() {

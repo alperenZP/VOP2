@@ -7,6 +7,25 @@ public class Processor {
     private int cacheOpslag;
     private String brandmerk;
 
+    public Processor(String modelNaam, int aantalCores, BigDecimal kloksnelheid, int cacheOpslag, String brandmerk) {
+        this.modelNaam = modelNaam;
+        this.aantalCores = aantalCores;
+        this.kloksnelheid = kloksnelheid;
+        this.cacheOpslag = cacheOpslag;
+        this.brandmerk = brandmerk;
+    }
+
+    @Override
+    public String toString() {
+        return "Processor{" +
+                "modelNaam='" + modelNaam + '\'' +
+                ", aantalCores=" + aantalCores +
+                ", kloksnelheid=" + kloksnelheid +
+                ", cacheOpslag=" + cacheOpslag +
+                ", brandmerk='" + brandmerk + '\'' +
+                '}';
+    }
+
     public String getModelNaam() {
         return modelNaam;
     }
