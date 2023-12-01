@@ -11,6 +11,10 @@ public class OpslagSchijf {
         return modelNaam;
     }
 
+    public ArrayList<String> getGegevens() {
+        return gegevens;
+    }
+
     public void setModelNaam(String modelNaam) {
         this.modelNaam = modelNaam;
     }
@@ -43,9 +47,6 @@ public class OpslagSchijf {
         return gebruikteOpslag;
     }
 
-    public void setGebruikteOpslag(int gebruikteOpslag) {
-        this.gebruikteOpslag = gebruikteOpslag;
-    }
     public void slaDataOp(String data){
         if (this.gebruikteOpslag + 1 <= maxOpslag){
             this.gebruikteOpslag = this.gebruikteOpslag + 1;

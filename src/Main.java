@@ -27,5 +27,8 @@ public class Main {
         robo.setActief(false);
         robo.loopLinks();
         System.out.println(robo.geefHuidigeLocatie());
+
+        String gkl = "interessant";
+        System.out.println(gkl.length());
     }
 }
